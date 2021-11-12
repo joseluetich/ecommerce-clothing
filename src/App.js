@@ -1,9 +1,10 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 import HomePage from "./pages/home/home";
-import Shop from "./pages/shop/shop";
+import ShopPage from "./pages/shop/shop";
 import Header from "./components/header/header";
 import "./App.css";
+import SignInAndSignOutPage from "./pages/sign-in-sign-out/sign-in-sign-out";
 
 function App() {
   return (
@@ -14,7 +15,10 @@ function App() {
           <HomePage />
         </Route>
         <Route path="/shop" exact>
-          <Shop />
+          <ShopPage />
+        </Route>
+        <Route path="/signIn" exact>
+          <SignInAndSignOutPage />
         </Route>
       </Switch>
     </div>
